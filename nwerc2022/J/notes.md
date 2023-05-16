@@ -2,17 +2,17 @@
 
 #### Input 
 
-$ n \in (1..2e5) $
+$` n \in (1..2e5) `$
 
-$ x_i, y_i \in (1..1e9) $
+$` x_i, y_i \in (1..1e9) `$
 
 There is no i,j such that: 
 ```x_i == x_j && y_i == y_j```
 
 #### 
-$f(i)$ for each $ i \in (1..n)$
+$f(i)$ for each $i \in (1..n)$
 
-$ f(i) = max (f(j) + 1) $ where $ (x_j, y_j) \subset (x_i, y_i) $   
+$f(i) = max (f(j) + 1)$ where $(x_j, y_j) \subset (x_i, y_i)$   
 
 #### 
 ---
