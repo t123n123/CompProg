@@ -1,15 +1,18 @@
 ## Justice Served 
 
-#### input
-n in 1..2e5
-x_i, y_i in 1..1e9
+#### Input 
 
-no x_i == x_j && y_i == y_j
+$ n \in (1..2e5) $
 
-#### output
-f (i) for each i in 1..n
+$ x_i, y_i \in (1..1e9) $
 
-f (i) = max (f(j) + 1) where (x_j, y_j) in (x_i, y_i) 
+There is no i,j such that: 
+```x_i == x_j && y_i == y_j```
+
+#### 
+$f(i)$ for each $ i \in (1..n)$
+
+$ f(i) = max (f(j) + 1) $ where $ (x_j, y_j) \subset (x_i, y_i) $   
 
 #### 
 ---
@@ -24,4 +27,11 @@ so we only need to consider larger segments when computing f (i)
 2. Go through segments from largest to smallest -> consider each possible pair 
 
 Time complexity: O(N^2) 
+
+---
+***NOTE***
+"if (x, y) in (a, b) then (x, y) -> (a, b) creates a poset (or directed acyclic graph). 
+
+---
+
 
