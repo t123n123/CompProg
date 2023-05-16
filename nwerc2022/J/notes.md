@@ -17,7 +17,8 @@ $f(i) = max (f(j) + 1)$ where $(x_j, y_j) \subset (x_i, y_i)$
 #### 
 ---
 ***NOTE***
-"if (x, y) in (a, b) then len(x,y) < len(a, b)"
+
+> "if (x, y) in (a, b) then len(x,y) < len(a, b)"
 
 so we only need to consider larger segments when computing f (i) 
 ---
@@ -30,7 +31,8 @@ Time complexity: O(N^2)
 
 ---
 ***NOTE***
-"if (x, y) in (a, b) then (x, y) -> (a, b) creates a poset (or directed acyclic graph). 
+
+> "if (x, y) in (a, b) then (x, y) -> (a, b) creates a poset (or directed acyclic graph)."
 
 ---
 
