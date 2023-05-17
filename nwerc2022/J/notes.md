@@ -30,9 +30,14 @@ so we only need to consider larger segments when computing f (i)
 Time complexity: O(N^2) 
 
 ---
-***NOTE***
+#### Solution 2
 
-> "if (x, y) in (a, b) then (x, y) -> (a, b) creates a poset (or directed acyclic graph)."
+1. Go from left to right through segment endpoints, keep track of all current segments and their value. 
+2. When entering new segment, find max previous segment that end after this segment. 
+
+
+
+
 
 ---
 
